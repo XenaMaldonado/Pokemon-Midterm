@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" >
     <title> Midterm Site on Pokémon! </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
 
     <style media="screen">
 
       body {
         margin:0;
-        background-color: #c197d2
+        padding:0;
+        background-color: #88b2e2
+        /* font-size: 1em;
+        color: #4A5568; */
       }
 
       .navbar {
         overflow: hidden;
-        background-color: #333;
+        background-color: #f69c9e;
         position: fixed;
         top: 0;
         width: 100%;
+        font-family: 'Fredoka', sans-serif;
+        font-weight: 500;
+        z-index: 500
       }
 
       .navbar a {
         float: left;
         display: block;
-        color: #c197d2;
+        color: #3b4cca;
         text-align: center;
-        padding: 14px 16px;
+        padding: 14px 25px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 20px;
       }
 
       .navbar a:hover {
-        background: #c197d2;
-        color: #211522;
+        background: #99c3ec;
+        color: #cc0000;
+      }
+
+      .navbar a.active {
+        border-bottom: 3px solid red;
+        border-right: 3px solid red;
+        border-top: 3px solid red;
+        border-left: 3px solid red;
       }
 
       .main {
         padding: 16px;
         margin-top: 30px;
         height: 1500px;
+        font-family: 'Fredoka', sans-serif;
       }
 
       .parallax {
-      background-image: url("pokemon-poster-color.png");
+      background-image: url("133386.jpg");
 
-      min-height: 800px;
-
+      min-height: 900px;
       background-attachment: fixed;
       background-position: center;
-      background-repeat: no-repeat;
       background-size: cover;
-    }
+      background-repeat: no-repeat;
+      margin: 0;
+      }
 
       .box {
-        background-color: #e6d5ed;
+        background-color: #97e3c2;
         color: #3a2d3f;
-        border: 2px solid black;
+        border: 4px solid darkgreen;
         margin: 20px;
         padding: 20px;
       }
@@ -71,13 +92,41 @@
 
       li {
       font-size: 20px;
+      font-weight: 300;
       }
+
+      h1 {
+        font-size: 80px;
+        color: white;
+        text-shadow: 4px 4px 8px black, 0 0 25px red, 0 0 5px darkred;
+      }
+
+      .auto-resizable-iframe {
+        max-width: 800px;
+        margin: 0px auto;
+      }
+
+      .auto-resizable-iframe > div {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0px;
+      }
+
+      .auto-resizable-iframe iframe {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+      }
+
 
     </style>
 
       <style>
-        h1 {text-align: center;}
-
+        h1 {text-align: center; font-weight: 600;}
+        h2 {text-align: center; font-weight: 400;}
+        h3 {text-align: center; font-size: 40px; color: yellow;}
       </style>
 
 
@@ -86,12 +135,128 @@
   <body>
 
     <div class="navbar">
-      <a href="/3-Page-Issue/index.html">Home</a>
-      <a href="/3-Page-Issue/challenges.html">Challenges</a>
-      <a href="/3-Page-Issue/Additional.html">Additional Websites</a>
+          <a href="index.html">Home</a>
+          <a href="myRecommendations.html">My Recommendations</a>
+          <a href="moreInformation.html">More Infromation</a>
     </div>
 
     <div class="parallax"></div>
+
+
+
+    <div class="main">
+      <h1>About Pokémon</h1>
+
+      <div class="box">
+        <h2>When it comes to Pokémon, you fall into one of two categories. You are either completely aware of Pokémon and have been following the anime, the video games, the movies, the trading cards, and everything else. Or, you may be completly bewildered by the nature of Pokémon and how it is widely known and popular in the internet. Whichever category you are in, we shall take a quick deep dive into the world of Pokémon and its impact on the world.</h2>
+        <!-- <ul>
+          <li><p><a href="https://www.arnoldventures.org/stories/in-pursuit-of-the-american-dream-latino-students-face-troubling-barriers-to-college-success">In Pursuit of the American Dream: Latino Students Face Troubling Barriers to College Success</a></p></li>
+        </ul> -->
+      </div>
+
+      <h3>
+        Timeline on Pokémon:
+      </h3>
+
+      <div class="timeline">
+         <div class="container container-left">
+             <div class="image" style="background-image:url('Tajiri.png')"></div>
+
+             <div class="content">
+               <span>Early 1980s</span>
+              <h2>Creation</h2>
+              <p>
+                Pokémon is short for "Pocket Monsters", and was started by Satoshi Tajiri and Ken Sugimori. Tajiri was the writer, and SUgimori was the illustrator.
+                Back in 1982, Satoshi started a gaming magazine together with his friends called Game Freak, and decided to start  making his own video games instead of writing about them.
+                In 1989, Satoshi turned Game Freak into a gaming company. He and his friends released games such as Pulseman, Yoshi and Mario & Wario.
+              </p>
+            </div>
+
+         </div>
+         <div class="container container-right">
+             <div class="image" style="background-image:url('nin.jpg')"></div>
+
+             <div class="content">
+               <span>Early 1990s</span>
+              <h2>Reaching out to Nintendo</h2>
+              <p>
+                Inspired by his childhood forests and finding forests and catching bugs and finising tadpoles, Satoshi came up with the idea for Pocket Monsters, more widely known as Pokémon, and pitched it to Nintendo.
+                Nintendo was a bit unsure about Pocket Monsters, but eventually accpeted.
+              </p>
+            </div>
+
+         </div>
+         <div class="container container-left">
+             <div class="image" style="background-image:url('redandgreen.jpg')"></div>
+
+             <div class="content">
+               <span>February 27, 1996</span>
+              <h2>Release of the First Games</h2>
+              <p>
+                On February 27, 1996, Poket Monsters was released in a Red and Green version for the Gameboy in Japan. The games were on a cartridge, and players were able to trade Pokémon using a cable to connect to each other's Gameboy.
+                The games went on to sell millions of copies, and were later released to the US in 1998, and the UK a year later, as a Red and Blue version (instead of Green).
+                The name was also shortened from Pocket Monsters to Pokémon.
+              </p>
+            </div>
+
+         </div>
+
+         <div class="container container-right">
+           <div class="image" style="background-image:url('_117302014_cards.jpg')"></div>
+
+           <div class="content">
+             <span>October 20, 1996</span>
+            <h2>First Set of Cards</h2>
+            <p>
+              A company called Media Factory created the Pokémon Trading Card Game.
+              The first set of cards were released and contained 102 cards. The drawings were created by Ken Suigimori, Mitsuhiro Arita and Keiji Kinebuchi.
+              Pokémon tournaments started up, where players could battle other player's Pokémon.
+            </p>
+           </div>
+        </div>
+
+        <div class="container container-left">
+            <div class="image" style="background-image:url('ash.png')"></div>
+
+            <div class="content">
+              <span>April 1, 1997</span>
+             <h2>Launch of a Pokémon TV Series</h2>
+             <p>
+               Originally, the story wad about a boy names Satoshi, names after satoshi Taijiri himself. He set off on a journey to try to become a Pokémon master with his Pokémon, Pikachu.
+               Once the series was released worldwide, Satoshi's name was changed to Ash Ketchum.
+             </p>
+           </div>
+        </div>
+
+        <div class="container container-right">
+          <div class="image" style="background-image:url('_117302016_m01japanese.jpg')"></div>
+
+          <div class="content">
+            <span>November 6, 1999</span>
+           <h2>First Movie</h2>
+           <p>
+             A film, called Pokémon the Movie: Mewtwo Strikes Back, followed trainer Ash ketchum and his friends, as they are invited to a mysterious island where they meet the powerful Pokémon named Mewtwo.
+           </p>
+          </div>
+       </div>
+
+      </div>
+
+      <h3>
+        <br>
+        Brief Video on Pokémon:
+      </h3>
+
+      <div class="auto-resizable-iframe">
+        <div>
+          <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/WTkVc33jTSA"></iframe>
+        </div>
+      </div>
+
+      <br><br><br><br><br><br><br><br>
+
+
+
 
   </body>
 </html>
